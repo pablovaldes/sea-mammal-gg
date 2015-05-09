@@ -1,0 +1,16 @@
+{
+    "contents" : "## User interface R file.\nlibrary(shiny)\n\nshinyUI(fluidPage(\n    \n    ## Application title\n    titlePanel(h1(\"A Northern Fur Seal's Journey\")),\n    \n    ## Here's the \"layout\" of the shiny app that I'll use.\n    sidebarLayout(\n        sidebarPanel(\n            h3(\"Explore\"),\n            p(\"See what this Northern Fur Seal was doing on its trip to sea. She\n            left Saint Paul Island, AK on August 26, 2011 and returned August\n            31, 2011.\"),\n            p(\"Full-trip data are shown in the backgrounds of the magnetometer\n            and overview plot. Overlaid are data over some period of time\n            specified by you below, up until the date specified by you below.\"),\n            p(\"Press the 'play' button to see an animation (albeit a slow one --\n            you'll have to wait ~6 seconds between each frame).\"),\n            sliderInput(\"delta_t\",\n                        \"Time span to view (minutes)\",\n                        min = 1,\n                        max = 120,\n                        value = 30),\n            sliderInput(\"current_t\",\n                        \"Choose the 'current' time (day of August):\",\n                        min = 26.1,\n                        max = 31,\n                        value = 28.95,\n                        animate = animationOptions(interval = 6000)),\n            checkboxInput(\"yes_night\",\n                          label = \"Display Night (shaded) and Day\\non dive plot\",\n                          value = 1)\n        ),\n        mainPanel(\n            fluidRow(\n                plotOutput(\"magPlot\")\n                ),\n            fluidRow(\n                column(6,\n                       plotOutput(\"mapPlot\")\n                       ),\n                column(6,\n                       plotOutput(\"depthPlot\")\n                       )\n                )\n            \n        )\n        \n        \n    )\n\n))",
+    "created" : 1430783077953.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2561597269",
+    "id" : "26DD05E3",
+    "lastKnownWriteTime" : 1431151012,
+    "path" : "~/Documents/ActiveProjects/SMTG_vis/gg_demo/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
