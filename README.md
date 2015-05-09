@@ -2,11 +2,11 @@
 A demonstration of sea mammal tracking visualization in R, by [Vincenzo Coia](https://vincenzocoia.wordpress.com/), with data from [Tiphaine Jeanniard Du Dot](http://www.fisheries.ubc.ca/students/tiphaine-jeanniard-du-dot).
 
 What is this?
-==
+--
 This repository contains everything you need to reproduce the graphics and shiny app that I demonstrated in the [Sea Mammal Roundtable](http://bioanalytics.pwias.ubc.ca/) at the University of British Columbia, on May 6, 2015.
 
 Goal of the demonstration
-==
+--
 There are three goals of this demonstration:
 
 1. *conceptual* -- how can one go about visualizing many variables?
@@ -14,7 +14,7 @@ There are three goals of this demonstration:
 3. *exploratory analysis* of a Northern Fur Seal's trip to sea
 
 What exercises are in the demonstration?
-==
+--
 There are three demonstrations in this repository:
 
 1. Using `ggplot2` and `ggmap` to produce an overview map of the seal's path.
@@ -31,7 +31,7 @@ There are three demonstrations in this repository:
 You can find out more about concepts and resources in my slides, entitled presentation.pdf.
 
 What about the data?
-==
+--
 You can find the data in the 'Data' directory. To work with the exercises, you'll need to download them and make sure the `load` commands in the R code point to the directory you put the data in.
 
 The data have been graciously made available by [Tiphaine Jeanniard Du Dot](http://www.fisheries.ubc.ca/students/tiphaine-jeanniard-du-dot), a PhD student at the University of British Columbia.
